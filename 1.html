@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Login</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000000; /* Background hitam */
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .login-container {
+            background: linear-gradient(135deg, #1a1a1a, #333333); /* Gradient abu-abu gelap untuk container */
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.5), 0 0 40px rgba(255, 0, 0, 0.3); /* Efek pencahayaan merah */
+            width: 300px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #ffffff;
+            margin-bottom: 20px;
+            text-shadow: 0 0 10px rgba(255, 0, 0, 0.8); /* Pencahayaan pada judul */
+        }
+
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 2px solid #ff0000; /* Garis merah */
+            border-radius: 5px;
+            background-color: #222222;
+            color: #ffffff;
+            box-shadow: 0 0 10px rgba(255, 0, 0, 0.5); /* Efek bercahaya pada border */
+            outline: none;
+        }
+
+        input[type="text"]:focus, input[type="password"]:focus {
+            box-shadow: 0 0 15px rgba(255, 0, 0, 0.8); /* Lebih bercahaya saat fokus */
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background: linear-gradient(135deg, #ff0000, #cc0000); /* Gradient merah pada tombol */
+            border: none;
+            border-radius: 5px;
+            color: #ffffff;
+            font-size: 16px;
+            cursor: pointer;
+            box-shadow: 0 0 10px rgba(255, 0, 0, 0.5); /* Pencahayaan pada tombol */
+            transition: box-shadow 0.3s ease;
+        }
+
+        button:hover {
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.8); /* Lebih bercahaya saat hover */
+        }
+
+        /* Efek pencahayaan tambahan untuk keseluruhan halaman */
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at center, rgba(255, 0, 0, 0.1) 0%, transparent 70%);
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form action="#" method="post">
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit">Masuk</button>
+        </form>
+    </div>
+</body>
+</html>
